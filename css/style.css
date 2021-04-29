@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    padding: 20px 0;
+}
+
+.titleStyle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+
+.imgDim {
+    width: 800px;
+    animation-name: comparsaImmagine;
+    animation-delay: 2.5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes comparsaImmagine {
+    0% {
+        opacity: 0;
+        border-radius: 0;
+    }
+    25% {
+        opacity: 0.25;
+        border-radius: 2.5px;
+    }
+    50% {
+        opacity: 0.5;
+        border-radius: 5px;
+    }
+    75% {
+        opacity: 0.75;
+        border-radius: 7.5px;
+    }
+    100% {
+        opacity: 1;
+        border-radius: 10px;
+    }
+}
