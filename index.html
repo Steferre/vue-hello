@@ -11,9 +11,9 @@
 </head>
 <body>
     <main id="container">
-        <h1 :class='titleStyle'>{{ title }}</h1>
+        <h1 :style="styleObj">{{ title }}</h1>
         <div :class="jsWrapper">
-            <img :src="newImg" alt="photo bridge and town" :class="imgDimension">
+            <img :src="newImg" alt="photo bridge and town" :class="imgDimension" @mouseover="mouseOver" @mouseleave = "mouseLeave">
         </div>
     </main>
     <!--<script src="script/script.js"></script>-->

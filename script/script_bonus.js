@@ -8,10 +8,21 @@ const app = new Vue(
         el: '#container',
         data: {
             title: (prompt('Inserisci un titolo a tua scelta!')).toUpperCase(),
-            titleStyle: 'titleStyle',
             newImg: 'img/bridge.jpg',
             jsWrapper: 'wrapper',
-            imgDimension: 'imgDim'
+            imgDimension: 'imgDim',
+            styleObj: {
+                color: "black"
+            }
         },
+        methods: {
+            mouseOver() {
+                this.styleObj.color = "red";
+            },
+    
+            mouseLeave() {
+                this.styleObj.color = "black";
+            }
+        }
     }
 )
